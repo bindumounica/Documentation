@@ -1,0 +1,26 @@
+* If the developers are doing the code changes locally and if any other person is working on the same functionality then he should work in the system which the first developer has worked.
+* Or else, he should share to the other developer via email so that he can continue modifying the code.
+* If the first developer is on leave due to emergency then there is no other way to continue the work.
+* So we are using the github repository where each and everyone can push their code once the changes are done.
+* We are creating branches from main/master because two or more developers can work in the same time and while merging they can do pull and merge so that it will be in sync with main/master branch.
+* main branch will contain readme.MD file where as master doesn't contain the readme.MD file.
+
+Advantages:
+-------------
+- Multiple developers can work on the same functionality at a time.
+- Branching strategy can be maintained for different environment like dev,test,prod.
+- Entire code is present in one place in the repo.
+
+Commands:
+----------
+clone: This is used to clone the entire repo so that the code comes to local and changes can be done in local.
+- git clone <remote_repo_url>
+- git clone -b <branch_name> <remote_url>
+checkout: This is used to change the branch by default when you clone it will take the branch as main/master.
+- git checkout <branch_name>
+to create a branch:
+* To create branch first you need to checkout the source branch eg: git checkout main ---> if you need to create the branch from main
+- git branch <branch_name>
+to delete branch:
+* You need to checkout to different branch other than the branch which you want to delete.
+- git branch -D <branch_name>
